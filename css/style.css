@@ -45,18 +45,41 @@ footer{
     color: #f1c6958e;
     padding: 10px;
 }
-header{
-    background-color: #f1c6958e;
-    box-shadow: 0px 3px 8px #5f3820;
-}
-.navbar{
-    background-color: #f1c6958e;
+.nav-link{
     color: #5f3820;
+    font-family: "Poppins-Bold";
 }
-/* .lista{
+.dropdown-item{
+    width: 90%;
+    color: #5f3820;
+    font-family: "Poppins-Bold";
+}
+.header{
+    background-color: #f1c6958e;
+}
+.carousel-item{
+    height: 40rem;
+    color: #5f3820;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+} 
+/* .header {
+    background: url(../img/torta-chocolate.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+.header .navbar {
+    background-color: 
+  } */
+/* nav .navbar{
+    /* background-color: ; */ 
+    /* color: #5f3820;
+.lista{
     display: inline;
     font-family: "Poppins-Bold";
-} */
+}  */
 
 /* .nav-bar{
     display: inline;
@@ -68,7 +91,8 @@ header{
     margin: 2px;
 } */
 .imagen-logo{
-    width: 7em;
+    /* display: inline-block; */
+    width: 110px;
 }
 .imagen-principal{
     display: block;
@@ -78,7 +102,7 @@ header{
     padding: 0%;
     border: 0%;
 }
-.titulo-foto{
+/* .titulo-foto{
     position: absolute;
     top: 350px;
     width: 40%;
@@ -91,7 +115,7 @@ header{
     color: #f1c6958e;
     top: 500px;
     left: 50px;
-}
+} */
 .caja-pasteleria{
     display: inline-block;
     width: 100%;
