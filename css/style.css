@@ -12,17 +12,19 @@
     font-family: "Poppins-Bold";
     src: url("../fonts/Poppins-Bold.otf");
 }
-body {
+html, body {
     font-family: "Poppins-Regular";
     background-color: #f1c6958e;
     color: #5f3820;
+    height: 100%;
+    width: 100%;
 }
 
-h3{
+/* h3{
     font-family: "Poppins-Bold";
     font-size: 2rem;
     margin: 15px;
-}
+} */
 p{
     font-size:1.05rem ;
 }
@@ -45,25 +47,93 @@ footer{
     color: #f1c6958e;
     padding: 10px;
 }
+.navbar-nav li{
+    padding-right: 20px;
+}
 .nav-link{
     color: #5f3820;
     font-family: "Poppins-Bold";
+    font-size: 1.1em;
 }
 .dropdown-item{
     width: 90%;
     color: #5f3820;
     font-family: "Poppins-Bold";
+    font-size: 1.1em;
 }
 .header{
     background-color: #f1c6958e;
 }
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    position: absolute;
+    top: 42%;
+    right: 50%;
+    left: 10%;
+}
+.carousel-caption h3{
+    font-size: 200%;
+    /* font-weight: 500; */
+    color: #f1c6958e;
+    font-family: "Poppins-Bold";
+    text-shadow: 1px 1px 10px #000;
+}
+.btn-outline-primary{
+    color: #f1c6958e;
+    border: 2px solid #f1c6958e;
+    text-shadow: 1px 1px 10px #000;
+}
+.btn-outline-primary:hover{
+    background-color: #f1c6958e;
+    border: 2px solid #f1c6958e;
+    color: white;
+}
+.carousel{
+    box-shadow: 5px 10px 18px #5f3820;
+}
 .carousel-item{
-    height: 40rem;
+    height: 38em;
     color: #5f3820;
-    position: relative;
+}
+.col{
+    padding: 0%;
+}
+.col img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 10px 18px #5f3820;
+}
+.container-pasteleria{
+    background-color: #f1c695;
+}
+.container-pasteleria h3{
+    font-size: 200%;
+    color: #5f3820;
+    font-family: "Poppins-Bold";
+    margin-bottom: 3.5%;
+}
+.container-pasteleria p{
+    font-size: 120%;
+}
+.btn-primary{
+    background-color:#5f3820;
+    border: 2px solid #5f3820;
+    padding: 1%;
+    margin-top: 0%;
+}
+.btn-primary:hover{
+    background-color: #5f3820b9;
+    border: 2px solid #5f3820b9;
+    color: white;
+}
+/* .overlay-image{
     background-position: center;
     background-size: cover;
-} 
+    opacity: 0.8;
+} */
 /* .header {
     background: url(../img/torta-chocolate.jpg) no-repeat center;
     background-size: cover;
@@ -327,5 +397,14 @@ footer{
     width: 40%;
     padding: 20px;
 }
-
+ /*---Media Queries --*/ 
+ @media (max-width: 992px) {
+    
+ }
+ @media (max-width: 768px) {
+    
+ }
+ @media (max-width: 576px) {
+    
+ }
 
