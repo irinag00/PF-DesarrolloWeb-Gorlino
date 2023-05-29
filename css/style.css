@@ -14,7 +14,7 @@
 }
 html, body {
     font-family: "Poppins-Regular";
-    background-color: #f1c6958e;
+    background-color: #f1c695;
     color: #5f3820;
     height: 100%;
     width: 100%;
@@ -28,42 +28,42 @@ html, body {
 /* p{
     font-size:1.05rem ;
 } */
-h4{
+/* h4{
     font-size:1.3rem ;
-}
-a{
+} */
+/* a{
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
     margin: 10px;
     color: #5f3820;
-}
+} */
 footer{
-    width: 100%;
-    height: 100%;
-    display: inline-block;
     text-align: center;
-    background-color: #5f3820;
+    background-color: #5f3820be;
     color: #f1c6958e;
     padding: 10px;
 }
+
+/* NavBar */
+
 .navbar-nav li{
     padding-right: 20px;
 }
 .nav-link{
     color: #5f3820;
     font-family: "Poppins-Bold";
-    font-size: 1.1em;
+    font-size: 1.1em !important;
 }
 .dropdown-item{
     width: 90%;
     color: #5f3820;
     font-family: "Poppins-Bold";
-    font-size: 1.1em;
+    font-size: 1.1em !important;
 }
-.header{
-    background-color: #f1c6958e;
-}
+
+/* Carousel */
+
 .carousel-inner img{
     width: 100%;
     height: 100%;
@@ -100,9 +100,9 @@ footer{
     height: 38em;
     color: #5f3820;
 }
-.col{
-    padding: 0%;
-}
+
+/* Container-Pasteleria-Panaderia */
+
 .container-pasteleria-img{
     width: 100%;
     height: 100%;
@@ -138,16 +138,26 @@ footer{
     border: 2px solid #5f3820b9;
     color: white;
 }
+
+/* Sección de 'Nuestros Servicios' */
+
+.section-servicios{
+    background-color: #f1c695;
+}
 .container-servicios{
 padding: 0%;
 margin: 0%;
 }
 .container-title-servicios{
     padding-top: 3.3%;
+    font-family:"Poppins-Bold" ;
 }
 
 .container-servicios p{
     font-size: 100%;
+}
+.container-servicios h4{
+    font-family:"Poppins-Bold" ;
 }
 .container-servicios img {
     width:250px;
@@ -155,7 +165,31 @@ margin: 0%;
     border-radius:150px;
     border: solid 3px #5f3820;
     object-fit: cover;
+    margin: 1.5%;
 }
+
+/* Sección 'Redes Sociales' */
+.container-redes i{
+    color: #5f3820;
+    font-size: 2.5em;
+    padding: 2%;
+}
+.container-redes{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.container-redes h3{
+    font-family:"Poppins-Bold" ;
+}
+
+/* Sección 'Fotos' */
+.container-fotos{
+    
+}
+
+/* .container-footer{
+    width:60%;
+} */
 /* .overlay-image{
     background-position: center;
     background-size: cover;
