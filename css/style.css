@@ -433,6 +433,9 @@ border-top: solid 2px #5f3820;
     .grid-container-fotos .item2:nth-child(2){
         grid-column-start: span 1;
     }
+    .caja-producto{
+        width: 95%;
+    }
  }
  @media screen and (max-width: 576px) {
     .grid-container-fotos{
