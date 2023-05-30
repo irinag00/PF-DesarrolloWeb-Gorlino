@@ -112,6 +112,47 @@ border-top: solid 2px #5f3820;
 }
 
 /* Container-Pasteleria-Panaderia */
+.grid-container-fotos{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    grid-gap: 20px;
+    padding: 1%;
+}
+.grid-container-fotos img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.grid-container-fotos img:hover{
+    transform: scale(1.2);
+}
+.grid-container-fotos div{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    overflow: hidden;
+}
+.grid-container-fotos .item1:nth-child(1){
+    grid-row-start: span 2;
+}
+.grid-container-fotos .item2:nth-child(2){
+    grid-column-start: span 2;
+}
+.grid-container-fotos-tittle{
+    /* position: relative;
+    bottom: 20%;
+    color: #f1c695;
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,1));
+    width: 100%;
+    margin: 0%;
+    padding: 10px; */
+  }
+/* Container-Pasteleria-Panaderia */
 
 .container-pasteleria-img{
     width: 100%;
@@ -469,13 +510,36 @@ margin: 0%;
     padding: 20px;
 }
  /*---Media Queries --*/ 
- @media (max-width: 992px) {
-    
+ @media screen and (max-width: 768px) {
+    .grid-container-fotos{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .grid-container-fotos div{
+        height: 200px;
+    }
+    .grid-container-fotos .item1:nth-child(1){
+        grid-row-start: span 1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .grid-container-fotos .item2:nth-child(2){
+        grid-column-start: span 1;
+    }
  }
- @media (max-width: 768px) {
-    
- }
- @media (max-width: 576px) {
-    
+ @media screen and (max-width: 576px) {
+    .grid-container-fotos{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-container-fotos .item2:nth-child(2){
+        height: 200px;
+    }
+    .grid-container-fotos .item1:nth-child(1){
+        height: 200px;
+    }
  }
 
