@@ -61,6 +61,10 @@ footer{
     font-family: "Poppins-Bold";
     font-size: 1.1em !important;
 }
+.imagen-logo{
+    /* display: inline-block; */
+    width: 110px;
+}
 
 /* Titulo post-carousel */
 .section-title-index h3{
@@ -155,6 +159,7 @@ border-top: solid 2px #5f3820;
     font-size: 100%;
     font-family: "Poppins-Regular";
     text-align: center;
+    display: inline-block;
   }
 
 
@@ -164,23 +169,22 @@ border-top: solid 2px #5f3820;
     background-color: #f1c695;
 }
 .container-servicios{
-padding: 0%;
-margin: 0%;
+    padding: 2%;
 }
 .container-title-servicios{
     /* padding-top: 3.3%; */
     font-family:"Poppins-Bold" ;
+    /* margin-bottom: 1.5%; */
 }
-
 .container-servicios p{
-    font-size: 100%;
+    font-size: 90%;
 }
 .container-servicios h4{
     font-family:"Poppins-Bold" ;
 }
 .container-servicios img {
-    width:250px;
-    height:250px;
+    width:200px;
+    height:200px;
     border-radius:150px;
     border: solid 3px #5f3820;
     object-fit: cover;
@@ -201,143 +205,6 @@ margin: 0%;
     font-family:"Poppins-Bold" ;
 }
 
-/* Sección 'Fotos' */
-/* .container-fotos{
-    
-} */
-
-/* .container-footer{
-    width:60%;
-} */
-/* .overlay-image{
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
-} */
-/* .header {
-    background: url(../img/torta-chocolate.jpg) no-repeat center;
-    background-size: cover;
-    min-height: 100vh;
-  }
-
-.header .navbar {
-    background-color: 
-  } */
-/* nav .navbar{
-    /* background-color: ; */ 
-    /* color: #5f3820;
-.lista{
-    display: inline;
-    font-family: "Poppins-Bold";
-}  */
-
-/* .nav-bar{
-    display: inline;
-    margin-left: 0%;
-} */
-/* .encabezado{
-    display: inline;
-    margin-left: 0%;
-    margin: 2px;
-} */
-.imagen-logo{
-    /* display: inline-block; */
-    width: 110px;
-}
-.imagen-principal{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding: 0%;
-    border: 0%;
-}
-/* .titulo-foto{
-    position: absolute;
-    top: 350px;
-    width: 40%;
-    color: #f1c6958e;
-    left: 50px;
-}
-.link-nosotros{
-    border: solid 2px #f1c6958e;;
-    position: absolute;
-    color: #f1c6958e;
-    top: 500px;
-    left: 50px;
-} */
-.caja-pasteleria{
-    display: inline-block;
-    width: 100%;
-    height: 688px;
-}
-.caja-titulos-pasteleria{
-    display: inline-block;
-    position: relative;
-    left: 1200px;
-    bottom: 280px;
-    text-align: right;
-}
-.img-pasteleria{
-    display: inline-block;
-    width: 50%;
-    position: relative;
-    right: 440px;
-    top: 5px;
-    text-align: left;
-}
-.titulo-pasteleria{
-    display: inline-block;
-    font-family: "Poppins-Bold";
-    font-size: 2rem;
-    text-align: right;
-}
-.caja-panaderia{
-    width: 100%;
-    display: inline-block;
-}
-.img-panaderia{
-    display: inline-block;
-    width: 50%;
-    text-align: right;
-}
-.caja-titulos-panaderia{
-    display: inline-block;
-    text-align: left;
-    width: 940px;
-    position: relative;
-    left: 200px;
-    bottom: 200px;
-}
-.titulo-panaderia{
-    display: inline-block;
-    font-family: "Poppins-Bold";
-    font-size: 2rem;
-    text-align: left;
-}
-.caja-puntos{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    background-color: antiquewhite;
-}
-.caja-cal-exp-tend{
-    margin-top: 20px;
-    text-align: center;
-    display: inline-block;
-    width: 500px;
-    margin: 20px;
-}
-.img-cal-exp-tend{
-    width:300px;
-    height:300px;
-    border-radius:150px;
-    border: solid 3px #5f3820;
-}
-.titulo-cal-exp-tend{
-    font-family: "Poppins-Bold";
-    font-size: 18px;
-}
 .link-productos{
     border: solid 2px #5f3820;
 }
