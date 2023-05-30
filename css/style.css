@@ -127,6 +127,7 @@ border-top: solid 2px #5f3820;
     width: 100%;
     height: 100%;
     transition: 0.5s;
+    opacity: 0.8;
 }
 .grid-container-fotos img:hover{
     transform: scale(1.2);
@@ -143,15 +144,19 @@ border-top: solid 2px #5f3820;
 .grid-container-fotos .item2:nth-child(2){
     grid-column-start: span 2;
 }
-.grid-container-fotos-tittle{
-    /* position: relative;
-    bottom: 20%;
-    color: #f1c695;
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,1));
-    width: 100%;
-    margin: 0%;
-    padding: 10px; */
+.grid-container-fotos-title{
+    display: inline;
+    position: relative;
+    bottom: 60%;
+    color: white;
+    text-shadow: 1px 1px 10px #000;
   }
+  .grid-container-fotos h3{
+    font-size: 100%;
+    font-family: "Poppins-Regular";
+    text-align: center;
+  }
+  
 /* Container-Pasteleria-Panaderia */
 
 .container-pasteleria-img{
