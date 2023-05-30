@@ -56,10 +56,16 @@ footer{
     font-size: 1.1em !important;
 }
 .dropdown-item{
-    width: 90%;
     color: #5f3820;
     font-family: "Poppins-Bold";
     font-size: 1.1em !important;
+}
+.dropdown-menu {
+    background-color: #f1c695;
+}
+.dropdown-item:hover{
+    background-color:#99552ba9 ;
+    color: #5f3820;
 }
 .imagen-logo{
     width: 110px;
