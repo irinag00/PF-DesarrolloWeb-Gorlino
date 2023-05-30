@@ -63,12 +63,13 @@ footer{
 }
 
 /* Titulo post-carousel */
-
 .section-title-index h3{
 border-top: solid 2px #5f3820;
 }
-.text-bold{
+.section-title-index span{
     font-family: "Poppins-Bold";
+    color: #99552b;
+    font-size: 160%;
 }
 
 /* Carousel */
