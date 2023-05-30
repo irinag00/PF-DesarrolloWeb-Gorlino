@@ -62,7 +62,6 @@ footer{
     font-size: 1.1em !important;
 }
 .imagen-logo{
-    /* display: inline-block; */
     width: 110px;
 }
 
@@ -81,18 +80,15 @@ border-top: solid 2px #5f3820;
 .carousel-inner img{
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
 }
 .carousel-caption{
     position: absolute;
     top: 42%;
     right: 50%;
     left: 10%;
-    /* object-fit: cover; */
 }
 .carousel-caption h3{
     font-size: 180%;
-    /* font-weight: 500; */
     color: #f1c6958e;
     font-family: "Poppins-Bold";
     text-shadow: 1px 1px 10px #000;
@@ -115,7 +111,7 @@ border-top: solid 2px #5f3820;
     color: #5f3820;
 }
 
-/* Container-Pasteleria-Panaderia */
+/* Container Imagenes-Link de productos */
 .grid-container-fotos{
     width: 100%;
     max-width: 1500px;
