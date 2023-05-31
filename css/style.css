@@ -325,6 +325,7 @@ border-top: solid 2px #5f3820;
   .form-title{
     font-family: "Poppins-Bold";
     text-align: center;
+    margin: 1%;
   }
   .container-formulario .form .form-label{
     display: block;
