@@ -329,6 +329,63 @@ border-top: solid 2px #5f3820;
   .container-galeria img:hover{
     filter: opacity(.8);
   }
+
+  /* Formulario */
+  .container-formulario .form{
+    background:#f3d4b1;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px ;
+    padding-bottom: 30px;
+    border-radius:3px ;
+  } 
+  .form-title{
+    font-family: "Poppins-Bold";
+    text-align: center;
+  }
+  .container-formulario .form .form-label{
+    display: block;
+    color: #5f3820;
+    font-size: 110%;
+    position: relative;
+  }
+
+  .container-formulario .form .form-input, .form-textarea{
+    background: #cf946e9a;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #5f3820;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: "Poppins-Regular";
+  }
+  .container-formulario .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+  }
+  .container-formulario .form .btn-formulario{
+    width: 100%;
+    outline: none;
+    font-size: 110%;
+    border: none;
+    color: #cf946e9a;
+    padding: 15px 0;
+    cursor: pointer;
+    background-color: #5f3820;
+  }
+  .container-formulario .form .btn-formulario:hover{
+    background: #5f38209a;
+    color: #5f3820;
+  }
+  .container-title p{
+    font-family: "Poppins-Regular";
+  }
 /* 
 .btn-formulario{
     border: solid 2px #5f3820;
