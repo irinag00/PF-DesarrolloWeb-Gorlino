@@ -1,0 +1,27 @@
+@import '../utilities/variables', '../utilities/mixin';
+
+/* NavBar */
+
+.navbar-nav {
+	li {
+		padding-right: 20px;
+	}
+}
+.nav-link {
+    @include contenido_estilo_negrita;
+	font-size: 1.1em !important;
+}
+.dropdown-item {
+    @include contenido_estilo_negrita;
+	font-size: 1.1em !important;
+	&:hover {
+		background-color: $background-color_hover;
+		color: $color_tipografia_oscuro;
+	}
+}
+.dropdown-menu {
+	background-color: $background-color_claro;
+}
+.imagen-logo {
+	width: 110px;
+}

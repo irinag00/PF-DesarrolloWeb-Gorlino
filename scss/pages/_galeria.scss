@@ -1,0 +1,35 @@
+@import '../utilities/variables', '../utilities/mixin';
+
+/* Sección 'Galería' */
+.container-galeria {
+	width: 100%;
+	max-width: 1500px;
+	margin: auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 250px;
+	grid-gap: 15px;
+	.box-img {
+		figure {
+			@include tamanio_completo;
+		}
+		&:nth-child(1) {
+			grid-column-start: span 2;
+		}
+		&:nth-child(4) {
+			grid-row-start: span 2;
+		}
+		&:nth-child(9) {
+			grid-column-start: span 2;
+		}
+	}
+	img {
+		@include tamanio_completo;
+		object-fit: cover;
+		&:hover {
+			filter: opacity(.8);
+		}
+	}
+}

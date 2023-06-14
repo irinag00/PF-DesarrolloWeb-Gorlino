@@ -1,0 +1,6 @@
+@import '../utilities/variables';
+body {
+    @include contenido_estilo_regular;
+    background-color: $background-color_claro;
+    @include tamanio_completo;
+}
