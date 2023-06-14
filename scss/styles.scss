@@ -1,0 +1,25 @@
+
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url("../assets/fonts/Poppins-Regular.otf");
+}
+@font-face {
+	font-family: "Poppins-Bold";
+	src: url("../assets/fonts/Poppins-Bold.otf");
+}
+@import "variables", "extend", "mixin", "footer";
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+// html {
+//     @include contenido_estilo;
+//     @include tamanio_completo;
+// }
+body {
+    @include contenido_estilo;
+    @include tamanio_completo;
+}
+

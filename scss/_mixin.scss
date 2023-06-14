@@ -1,0 +1,11 @@
+@import "variables";
+
+@mixin contenido_estilo{
+    font-family: $font-family_regular;
+	background-color: $background-color_claro;
+	color: $color_tipografia_oscuro;
+}
+@mixin tamanio_completo{
+    height: 100%;
+	width: 100%;
+}
