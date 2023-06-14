@@ -113,19 +113,19 @@ footer {
   color: rgba(241, 198, 149, 0.5568627451);
   padding: 10px;
 }
-footer .btn-outline-primary {
+footer .btn-outline-light {
   display: inline-block;
-  background-color: rgba(95, 56, 32, 0.7450980392);
-  border: 1px rgba(95, 56, 32, 0.7450980392) solid;
-  color: white;
+  border: 2px rgba(241, 198, 149, 0.5568627451) solid;
+  color: rgba(241, 198, 149, 0.5568627451);
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
   border-radius: 3px;
 }
-footer .btn-outline-primary:hover {
-  background-color: #99552b;
-  border: 1px #99552b solid;
+footer .btn-outline-light:hover {
+  background-color: #f1c695;
+  color: #5f3820;
+  border: 2px #f1c695 solid;
 }
 footer .imagen-logo {
   width: 110px;
@@ -386,19 +386,19 @@ footer {
   color: rgba(241, 198, 149, 0.5568627451);
   padding: 10px;
 }
-footer .btn-outline-primary {
+footer .btn-outline-light {
   display: inline-block;
-  background-color: rgba(95, 56, 32, 0.7450980392);
-  border: 1px rgba(95, 56, 32, 0.7450980392) solid;
-  color: white;
+  border: 2px rgba(241, 198, 149, 0.5568627451) solid;
+  color: rgba(241, 198, 149, 0.5568627451);
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
   border-radius: 3px;
 }
-footer .btn-outline-primary:hover {
-  background-color: #99552b;
-  border: 1px #99552b solid;
+footer .btn-outline-light:hover {
+  background-color: #f1c695;
+  color: #5f3820;
+  border: 2px #f1c695 solid;
 }
 footer .imagen-logo {
   width: 110px;
