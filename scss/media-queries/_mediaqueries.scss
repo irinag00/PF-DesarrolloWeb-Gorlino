@@ -1,0 +1,74 @@
+@import '../utilities/variables', '../utilities/mixin';
+/*---Media Queries --*/
+@media screen and (max-width: 768px) {
+	.grid-container-fotos {
+		width: 95%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		grid-template-rows: 200px;
+		div {
+			height: 200px;
+		}
+		.item1 {
+			&:nth-child(1) {
+				grid-row-start: span 1;
+				object-fit: cover;
+				@include tamanio_completo;
+			}
+		}
+		.item2 {
+			&:nth-child(2) {
+				grid-column-start: span 1;
+			}
+		}
+	}
+	.caja-producto {
+		width: 95%;
+	}
+	.container-nosotros {
+		grid-template-columns: auto;
+	}
+	.container-galeria {
+		width: 95%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		grid-template-rows: 200px;
+		.box-img {
+			&:nth-child(1) {
+				grid-column-start: span 1;
+			}
+			&:nth-child(9) {
+				grid-column-start: span 1;
+			}
+		}
+	}
+}
+@media screen and (max-width: 576px) {
+	.grid-container-fotos {
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+		.item2 {
+			&:nth-child(2) {
+				height: 200px;
+			}
+		}
+		.item1 {
+			&:nth-child(1) {
+				height: 200px;
+			}
+		}
+	}
+	.container-nosotros {
+		grid-template-columns: auto;
+	}
+	.container-galeria {
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+		.box-img {
+			img {
+				height: 200px;
+			}
+		}
+	}
+}
+

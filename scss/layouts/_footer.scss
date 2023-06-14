@@ -1,0 +1,22 @@
+@import '../utilities/variables';
+
+footer {
+	text-align: center;
+	background-color: $background-color_oscuro;
+	color: $color_tipografia_claro;
+	padding: 10px;
+	.btn-outline-primary{
+		display: inline-block;
+		background-color: $background-color_oscuro;
+		border: 1px $background-color_oscuro solid;
+		color: white;
+		padding: 5px 10px;
+		text-decoration: none;
+		margin-top: 10px;
+		border-radius: 3px;
+		&:hover {
+			background-color: #99552b;
+			border: 1px #99552b solid;
+		} 
+	}
+}

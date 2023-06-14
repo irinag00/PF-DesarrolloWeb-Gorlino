@@ -1,8 +1,11 @@
 @import "variables";
 
-@mixin contenido_estilo{
+@mixin contenido_estilo_regular{
     font-family: $font-family_regular;
-	background-color: $background-color_claro;
+	color: $color_tipografia_oscuro;
+}
+@mixin contenido_estilo_negrita{
+    font-family: $font-family_negrita;
 	color: $color_tipografia_oscuro;
 }
 @mixin tamanio_completo{
