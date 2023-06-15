@@ -12,3 +12,24 @@
     height: 100%;
 	width: 100%;
 }
+@mixin sombras_img ($tamanio){
+    box-shadow: 5px 10px ($tamanio)  $shadow-color_text-img;
+}
+@mixin sombras_text ($color){
+    text-shadow: 1px 1px 10px ($color);
+}
+@mixin display_grid ($cant_columnas){
+    display: grid;
+	grid-template-columns: repeat($cant_columnas, 1fr);
+}
+@mixin grid_tamanio ($cant_columnas ,$cant_fila, $distancia){
+    @include display_grid($cant_columnas);
+    grid-template-rows: ($cant_fila);
+	grid-gap: ($distancia);
+}
+@mixin tamanio_columna ($tamanio){
+    grid-column-start: span ($tamanio);
+}
+@mixin tamanio_fila ($tamanio){
+    grid-row-start: span ($tamanio);
+}

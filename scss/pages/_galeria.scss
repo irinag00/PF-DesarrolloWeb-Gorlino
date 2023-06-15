@@ -7,22 +7,27 @@
 	margin: auto;
 	margin-top: 60px;
 	margin-bottom: 60px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 250px;
-	grid-gap: 15px;
+	// display: grid;
+	// grid-template-columns: repeat(3, 1fr);
+	// @include display_grid(3);
+	// grid-template-rows: 250px;
+	// grid-gap: 15px;
+	@include grid_tamanio (3, 250px, 15px);
 	.box-img {
 		figure {
 			@include tamanio_completo;
 		}
 		&:nth-child(1) {
-			grid-column-start: span 2;
+			// grid-column-start: span 2;
+			@include tamanio_columna(2);
 		}
 		&:nth-child(4) {
-			grid-row-start: span 2;
+			// grid-row-start: span 2;
+			@include tamanio_fila(2);
 		}
 		&:nth-child(9) {
-			grid-column-start: span 2;
+			// grid-column-start: span 2;
+			@include tamanio_columna(2);
 		}
 	}
 	img {

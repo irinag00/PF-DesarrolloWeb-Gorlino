@@ -1,24 +1,28 @@
 @import '../utilities/variables', '../utilities/mixin';
+
 /*---Media Queries --*/
 @media screen and (max-width: 768px) {
 	.grid-container-fotos {
 		width: 95%;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 10px;
-		grid-template-rows: 200px;
+		// grid-template-columns: repeat(2, 1fr);
+		// grid-gap: 10px;
+		// grid-template-rows: 200px;
+		@include grid_tamanio (2, 200px, 10px);
 		div {
 			height: 200px;
 		}
 		.item1 {
 			&:nth-child(1) {
-				grid-row-start: span 1;
+				// grid-row-start: span 1;
+				@include tamanio_fila (1);
 				object-fit: cover;
 				@include tamanio_completo;
 			}
 		}
 		.item2 {
 			&:nth-child(2) {
-				grid-column-start: span 1;
+				// grid-column-start: span 1;
+				@include tamanio_columna (1);
 			}
 		}
 	}
@@ -30,15 +34,16 @@
 	}
 	.container-galeria {
 		width: 95%;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 10px;
-		grid-template-rows: 200px;
+		// grid-template-columns: repeat(2, 1fr);
+		// grid-gap: 10px;
+		// grid-template-rows: 200px;
+		@include grid_tamanio (2, 200px, 10px);
 		.box-img {
 			&:nth-child(1) {
-				grid-column-start: span 1;
+				@include tamanio_columna (1);
 			}
 			&:nth-child(9) {
-				grid-column-start: span 1;
+				@include tamanio_columna (1);
 			}
 		}
 	}
