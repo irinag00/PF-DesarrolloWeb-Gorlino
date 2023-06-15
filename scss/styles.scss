@@ -2,7 +2,7 @@
 @import "utilities/variables", "utilities/extend", "utilities/mixin";
 @import "components/fonts", "components/reset", "components/body", "components/navbar";
 @import "layouts/products", "layouts/footer";
-@import "pages/contacto", "pages/galeria";
+@import "pages/contacto", "pages/galeria", "pages/nosotros";
 
 /* Titulo post-carousel */
 
@@ -117,36 +117,5 @@
 		font-family: $font-family_negrita;
 	}
 }
-
-
-
-/* Sección 'Nosotros' */
-.container-nosotros {
-	display: grid;
-	grid-template-columns: auto auto;
-	background-color: #f3d4b1;
-	box-shadow: 5px 10px 18px #5f3820;
-	img {
-        @include tamanio_completo;
-		border-radius: 3px;
-	}
-}
-.container-nosotros-texto {
-	margin-top: 12%;
-	h4 {
-		font-size: 150%;
-		text-shadow: 1px 1px 10px #5f3820;
-	}
-	p {
-		font-size: 100%;
-	}
-	span {
-		font-family: $font-family_negrita;
-		color: #99552b;
-		font-size: 160%;
-	}
-}
-
-
 
 @import 'layouts/footer';
