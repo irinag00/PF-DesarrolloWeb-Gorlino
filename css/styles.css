@@ -324,6 +324,7 @@ footer .imagen-logo {
   margin: auto;
   margin-top: 60px;
   margin-bottom: 60px;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 250px;
@@ -332,6 +333,9 @@ footer .imagen-logo {
 .container-galeria .box-img figure {
   height: 100%;
   width: 100%;
+  box-shadow: 5px 10px 20px #5f3820;
+  position: relative;
+  overflow: hidden;
 }
 .container-galeria .box-img:nth-child(1) {
   grid-column-start: span 2;
@@ -346,9 +350,28 @@ footer .imagen-logo {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 .container-galeria img:hover {
-  filter: opacity(0.8);
+  transform: scale(1.1);
+}
+.container-galeria .intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Poppins-Bold";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.container-galeria .intro:hover {
+  opacity: 1;
 }
 
 /* Sección 'Nosotros' */
@@ -424,6 +447,7 @@ footer .imagen-logo {
 @media screen and (max-width: 576px) {
   .grid-container-fotos {
     width: 90%;
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   .grid-container-fotos .item2:nth-child(2) {
@@ -433,10 +457,12 @@ footer .imagen-logo {
     height: 200px;
   }
   .container-nosotros {
-    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
   .container-galeria {
     width: 90%;
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   .container-galeria .box-img img {

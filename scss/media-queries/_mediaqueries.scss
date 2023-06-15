@@ -51,7 +51,8 @@
 @media screen and (max-width: 576px) {
 	.grid-container-fotos {
 		width: 90%;
-		grid-template-columns: repeat(1, 1fr);
+		// grid-template-columns: repeat(1, 1fr);
+		@include display_grid(1);
 		.item2 {
 			&:nth-child(2) {
 				height: 200px;
@@ -64,11 +65,13 @@
 		}
 	}
 	.container-nosotros {
-		grid-template-columns: auto;
+		// grid-template-columns: auto;
+		@include display_grid(1);
 	}
 	.container-galeria {
 		width: 90%;
-		grid-template-columns: repeat(1, 1fr);
+		// grid-template-columns: repeat(1, 1fr);
+		@include display_grid(1);
 		.box-img {
 			img {
 				height: 200px;
