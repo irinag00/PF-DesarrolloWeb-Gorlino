@@ -45,10 +45,13 @@
 			&:nth-child(9) {
 				@include tamanio_columna (1);
 			}
+			figure{
+				@include sombras_img(5px);
+			}
 		}
 	}
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
 	.grid-container-fotos {
 		width: 90%;
 		// grid-template-columns: repeat(1, 1fr);
@@ -76,6 +79,9 @@
 			img {
 				height: 200px;
 			}
+			figure{
+				box-shadow: none;
+			};
 		}
 	}
 }

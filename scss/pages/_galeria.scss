@@ -17,7 +17,8 @@
 	.box-img {
 		figure {
 			@include tamanio_completo;
-			@include sombras_img (20px);
+			@include sombras_img(10px);
+			// box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 			position: relative;
 			overflow: hidden;
 		}
