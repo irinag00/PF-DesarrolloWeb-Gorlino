@@ -51,6 +51,120 @@ body {
   width: 110px;
 }
 
+/* Carousel */
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel {
+  box-shadow: 5px 10px 18px #5f3820;
+}
+
+.carousel-item {
+  height: 50%;
+  color: #5f3820;
+}
+
+/* Titulo post-carousel */
+.section-title-index h3 {
+  border-top: solid 2px #5f3820;
+}
+.section-title-index span {
+  font-family: "Poppins-Bold";
+  color: #99552b;
+  font-size: 160%;
+}
+
+/* Sección 'Redes Sociales' */
+.container-redes {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.container-redes i {
+  color: #5f3820;
+  font-size: 2.5em;
+  padding: 2%;
+}
+.container-redes h3 {
+  font-family: "Poppins-Bold";
+}
+
+/* Container Imagenes-Link de productos */
+.grid-container-fotos {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px;
+  grid-gap: 20px;
+  padding: 1%;
+}
+.grid-container-fotos img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.grid-container-fotos img:hover {
+  transform: scale(1.2);
+}
+.grid-container-fotos div {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  overflow: hidden;
+}
+.grid-container-fotos .item1:nth-child(1) {
+  grid-row-start: span 2;
+}
+.grid-container-fotos .item2:nth-child(2) {
+  grid-column-start: span 2;
+}
+.grid-container-fotos h3 {
+  font-size: 100%;
+  font-family: "Poppins-Regular";
+  text-align: center;
+  display: inline-block;
+}
+
+.grid-container-fotos-title {
+  display: inline;
+  position: relative;
+  bottom: 60%;
+  color: white;
+  text-shadow: 1px 1px 10px #000;
+}
+
+/* Sección de 'Nuestros Servicios' */
+.section-servicios {
+  background-color: #f1c695;
+}
+
+.container-servicios {
+  padding: 2%;
+}
+.container-servicios p {
+  font-size: 90%;
+}
+.container-servicios h4 {
+  font-family: "Poppins-Bold";
+}
+.container-servicios img {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  border: solid 3px #5f3820;
+  object-fit: cover;
+  margin: 1.5%;
+}
+
+.container-title-servicios {
+  font-family: "Poppins-Bold";
+}
+
 /* Sección 'Productos' */
 .caja-producto {
   text-align: center;
@@ -266,142 +380,66 @@ footer .imagen-logo {
   font-size: 160%;
 }
 
-/* Titulo post-carousel */
-.section-title-index h3 {
-  border-top: solid 2px #5f3820;
+/*---Media Queries --*/
+@media screen and (max-width: 768px) {
+  .grid-container-fotos {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 200px;
+  }
+  .grid-container-fotos div {
+    height: 200px;
+  }
+  .grid-container-fotos .item1:nth-child(1) {
+    grid-row-start: span 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .grid-container-fotos .item2:nth-child(2) {
+    grid-column-start: span 1;
+  }
+  .caja-producto {
+    width: 95%;
+  }
+  .container-nosotros {
+    grid-template-columns: auto;
+  }
+  .container-galeria {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 200px;
+  }
+  .container-galeria .box-img:nth-child(1) {
+    grid-column-start: span 1;
+  }
+  .container-galeria .box-img:nth-child(9) {
+    grid-column-start: span 1;
+  }
 }
-.section-title-index span {
-  font-family: "Poppins-Bold";
-  color: #99552b;
-  font-size: 160%;
-}
-
-/* Carousel */
-.carousel-inner img {
-  height: 100%;
-  width: 100%;
-}
-
-.carousel {
-  box-shadow: 5px 10px 18px #5f3820;
-}
-
-.carousel-item {
-  height: 50%;
-  color: #5f3820;
-}
-
-/* Container Imagenes-Link de productos */
-.grid-container-fotos {
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px;
-  grid-gap: 20px;
-  padding: 1%;
-}
-.grid-container-fotos img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  transition: 0.5s;
-  opacity: 0.8;
-}
-.grid-container-fotos img:hover {
-  transform: scale(1.2);
-}
-.grid-container-fotos div {
-  text-align: center;
-  padding: 20px;
-  font-size: 30px;
-  overflow: hidden;
-}
-.grid-container-fotos .item1:nth-child(1) {
-  grid-row-start: span 2;
-}
-.grid-container-fotos .item2:nth-child(2) {
-  grid-column-start: span 2;
-}
-.grid-container-fotos h3 {
-  font-size: 100%;
-  font-family: "Poppins-Regular";
-  text-align: center;
-  display: inline-block;
-}
-
-.grid-container-fotos-title {
-  display: inline;
-  position: relative;
-  bottom: 60%;
-  color: white;
-  text-shadow: 1px 1px 10px #000;
-}
-
-/* Sección de 'Nuestros Servicios' */
-.section-servicios {
-  background-color: #f1c695;
-}
-
-.container-servicios {
-  padding: 2%;
-}
-.container-servicios p {
-  font-size: 90%;
-}
-.container-servicios h4 {
-  font-family: "Poppins-Bold";
-}
-.container-servicios img {
-  width: 200px;
-  height: 200px;
-  border-radius: 150px;
-  border: solid 3px #5f3820;
-  object-fit: cover;
-  margin: 1.5%;
-}
-
-.container-title-servicios {
-  font-family: "Poppins-Bold";
-}
-
-/* Sección 'Redes Sociales' */
-.container-redes {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.container-redes i {
-  color: #5f3820;
-  font-size: 2.5em;
-  padding: 2%;
-}
-.container-redes h3 {
-  font-family: "Poppins-Bold";
-}
-
-footer {
-  text-align: center;
-  background-color: rgba(95, 56, 32, 0.7450980392);
-  color: rgba(241, 198, 149, 0.5568627451);
-  padding: 10px;
-}
-footer .btn-outline-light {
-  display: inline-block;
-  border: 2px rgba(241, 198, 149, 0.5568627451) solid;
-  color: rgba(241, 198, 149, 0.5568627451);
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-  border-radius: 3px;
-}
-footer .btn-outline-light:hover {
-  background-color: #f1c695;
-  color: #5f3820;
-  border: 2px #f1c695 solid;
-}
-footer .imagen-logo {
-  width: 110px;
+@media screen and (max-width: 576px) {
+  .grid-container-fotos {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-container-fotos .item2:nth-child(2) {
+    height: 200px;
+  }
+  .grid-container-fotos .item1:nth-child(1) {
+    height: 200px;
+  }
+  .container-nosotros {
+    grid-template-columns: auto;
+  }
+  .container-galeria {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-galeria .box-img img {
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

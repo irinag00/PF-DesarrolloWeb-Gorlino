@@ -1,0 +1,27 @@
+@import '../utilities/variables', '../utilities/mixin';
+
+/* Carousel */
+.carousel-inner {
+	img {
+        @include tamanio_completo;
+	}
+}
+.carousel {
+	box-shadow: 5px 10px 18px #5f3820;
+}
+.carousel-item {
+	height: 50%;
+	color: #5f3820;
+}
+/* Titulo post-carousel */
+
+.section-title-index {
+	h3 {
+		border-top: solid 2px #5f3820;
+	}
+	span {
+		font-family: $font-family_negrita;
+		color: #99552b;
+		font-size: 160%;
+	}
+}
