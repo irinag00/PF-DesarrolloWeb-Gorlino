@@ -2,26 +2,23 @@
 
 /* Sección 'Nosotros' */
 .container-nosotros {
-	// display: grid;
-	// grid-template-columns: auto auto;
 	@include display_grid(2);
 	background-color: $background-color_nosotros;
 	@include sombras_img (18px);
-	// box-shadow: 5px 10px 18px #5f3820;
 	img {
         @include tamanio_completo;
 		border-radius: 3px;
 	}
 }
 .container-nosotros-texto {
-	margin-top: 12%;
-	h4 {
-		font-size: 150%;
-		// text-shadow: 1px 1px 10px #5f3820;
+	margin-top: 10%;
+	h3 {
+		font-size: 180%;
 		@include sombras_text($shadow-color_text-img);
 	}
 	p {
 		font-size: 100%;
+		margin-bottom: 2%;
 	}
 	span {
 		font-family: $font-family_negrita;

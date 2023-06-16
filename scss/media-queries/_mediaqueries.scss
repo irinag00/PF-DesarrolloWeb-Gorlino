@@ -4,16 +4,12 @@
 @media screen and (max-width: 768px) {
 	.grid-container-fotos {
 		width: 95%;
-		// grid-template-columns: repeat(2, 1fr);
-		// grid-gap: 10px;
-		// grid-template-rows: 200px;
 		@include grid_tamanio (2, 200px, 10px);
 		div {
 			height: 200px;
 		}
 		.item1 {
 			&:nth-child(1) {
-				// grid-row-start: span 1;
 				@include tamanio_fila (1);
 				object-fit: cover;
 				@include tamanio_completo;
@@ -21,7 +17,6 @@
 		}
 		.item2 {
 			&:nth-child(2) {
-				// grid-column-start: span 1;
 				@include tamanio_columna (1);
 			}
 		}
@@ -31,12 +26,22 @@
 	}
 	.container-nosotros {
 		grid-template-columns: auto;
+		.container-nosotros-texto{
+			margin-top: 5%;
+			h3 {
+			font-size: 100%;
+			}
+			p {
+			font-size: 80%;
+			margin-bottom: 2%;
+			}
+			span {
+			font-size: 120%;
+			}
+		}
 	}
 	.container-galeria {
 		width: 95%;
-		// grid-template-columns: repeat(2, 1fr);
-		// grid-gap: 10px;
-		// grid-template-rows: 200px;
 		@include grid_tamanio (2, 200px, 10px);
 		.box-img {
 			&:nth-child(1) {
@@ -54,7 +59,6 @@
 @media screen and (max-width: 576px) {
 	.grid-container-fotos {
 		width: 90%;
-		// grid-template-columns: repeat(1, 1fr);
 		@include display_grid(1);
 		.item2 {
 			&:nth-child(2) {
@@ -68,12 +72,10 @@
 		}
 	}
 	.container-nosotros {
-		// grid-template-columns: auto;
 		@include display_grid(1);
 	}
 	.container-galeria {
 		width: 90%;
-		// grid-template-columns: repeat(1, 1fr);
 		@include display_grid(1);
 		.box-img {
 			img {

@@ -7,31 +7,22 @@
 	margin: auto;
 	margin-top: 60px;
 	margin-bottom: 60px;
-	// display: grid;
-	// grid-template-columns: repeat(3, 1fr);
-	// @include display_grid(3);
-	// grid-template-rows: 250px;
-	// grid-gap: 15px;
 	overflow: hidden;
 	@include grid_tamanio (3, 250px, 15px);
 	.box-img {
 		figure {
 			@include tamanio_completo;
 			@include sombras_img(10px);
-			// box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 			position: relative;
 			overflow: hidden;
 		}
 		&:nth-child(1) {
-			// grid-column-start: span 2;
 			@include tamanio_columna(2);
 		}
 		&:nth-child(4) {
-			// grid-row-start: span 2;
 			@include tamanio_fila(2);
 		}
 		&:nth-child(9) {
-			// grid-column-start: span 2;
 			@include tamanio_columna(2);
 		}
 	}
@@ -39,12 +30,8 @@
 		@include tamanio_completo;
 		object-fit: cover;
 		transition: transform 0.3s ease;
-		// animation: slideshow 15s;
-		// animation-duration: 4s;
 		&:hover {
 			transform: scale(1.1);
-			// filter: opacity(.8);
-			// animation-play-state: paused;
 		}
 	}
 	.intro{
@@ -65,39 +52,5 @@
 		}
 	}
 }
-// .box-img{
-// 	display: flex;
-// }
-// @keyframes slideshow {
-// 	0% {
-// 	  transform: translateX(0); /* Inicia desde la posición original */
-// 	}
-// 	11.11% {
-// 	  transform: translateX(-100%); /* Desplaza la primera imagen hacia la izquierda */
-// 	}
-	// 22.22% {
-	//   transform: translateX(-200%); /* Desplaza la segunda imagen hacia la izquierda */
-	// }
-	// 33.33% {
-	//   transform: translateX(-300%); /* Desplaza la tercera imagen hacia la izquierda */
-	// }
-	// 44.44% {
-	//   transform: translateX(-400%); /* Desplaza la cuarta imagen hacia la izquierda */
-	// }
-	// 55.55% {
-	//   transform: translateX(-500%); /* Desplaza la quinta imagen hacia la izquierda */
-	// }
-	// 66.66% {
-	//   transform: translateX(-600%); /* Desplaza la sexta imagen hacia la izquierda */
-	// }
-	// 77.77% {
-	//   transform: translateX(-700%); /* Desplaza la séptima imagen hacia la izquierda */
-	// }
-	// 88.88% {
-	//   transform: translateX(-800%); /* Desplaza la octava imagen hacia la izquierda */
-	// }
-	// 100% {
-	//   transform: translateX(-800%); /* Mantiene la octava imagen visible */
-	// }
   
   

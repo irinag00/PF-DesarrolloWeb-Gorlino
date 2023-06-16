@@ -7,7 +7,6 @@ footer {
 	padding: 10px;
 	.btn-outline-light{
 		display: inline-block;
-		// background-color: $background-color_oscuro;
 		border: 2px $color_tipografia_claro solid;
 		color: $color_tipografia_claro;
 		padding: 5px 10px;
@@ -15,15 +14,10 @@ footer {
 		margin-top: 10px;
 		border-radius: 3px;
 		&:hover {
-			// background-color: #99552b;
-			// border: 1px #99552b solid;
 			background-color: $background-color_claro;
 			color: $color_tipografia_oscuro;
 			border: 2px $background-color_claro solid;
-		} 
-		// &:active{
-		// 	background-color: $background-color_claro;
-		// }
+		}
 	}
 	.imagen-logo {
 		width: 110px;

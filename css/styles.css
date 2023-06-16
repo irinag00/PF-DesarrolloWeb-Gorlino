@@ -388,14 +388,15 @@ footer .imagen-logo {
 }
 
 .container-nosotros-texto {
-  margin-top: 12%;
+  margin-top: 10%;
 }
-.container-nosotros-texto h4 {
-  font-size: 150%;
+.container-nosotros-texto h3 {
+  font-size: 180%;
   text-shadow: 1px 1px 10px #5f3820;
 }
 .container-nosotros-texto p {
   font-size: 100%;
+  margin-bottom: 2%;
 }
 .container-nosotros-texto span {
   font-family: "Poppins-Bold";
@@ -429,6 +430,19 @@ footer .imagen-logo {
   }
   .container-nosotros {
     grid-template-columns: auto;
+  }
+  .container-nosotros .container-nosotros-texto {
+    margin-top: 5%;
+  }
+  .container-nosotros .container-nosotros-texto h3 {
+    font-size: 100%;
+  }
+  .container-nosotros .container-nosotros-texto p {
+    font-size: 80%;
+    margin-bottom: 2%;
+  }
+  .container-nosotros .container-nosotros-texto span {
+    font-size: 120%;
   }
   .container-galeria {
     width: 95%;
