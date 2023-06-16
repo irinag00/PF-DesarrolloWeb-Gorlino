@@ -76,6 +76,33 @@ body {
   font-size: 160%;
 }
 
+/* Sección de 'Nuestros Servicios' */
+.section-servicios {
+  background-color: #f1c695;
+}
+
+.container-servicios {
+  padding-top: 2%;
+}
+.container-servicios p {
+  font-size: 90%;
+}
+.container-servicios h4 {
+  font-family: "Poppins-Bold";
+}
+.container-servicios img {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  border: solid 3px #5f3820;
+  object-fit: cover;
+  margin-bottom: 1%;
+}
+
+.container-title-servicios {
+  font-family: "Poppins-Bold";
+}
+
 /* Sección 'Redes Sociales' */
 .container-redes {
   margin-top: 2%;
@@ -136,33 +163,6 @@ body {
   bottom: 60%;
   color: white;
   text-shadow: 1px 1px 10px black;
-}
-
-/* Sección de 'Nuestros Servicios' */
-.section-servicios {
-  background-color: #f1c695;
-}
-
-.container-servicios {
-  padding: 2%;
-}
-.container-servicios p {
-  font-size: 90%;
-}
-.container-servicios h4 {
-  font-family: "Poppins-Bold";
-}
-.container-servicios img {
-  width: 200px;
-  height: 200px;
-  border-radius: 150px;
-  border: solid 3px #5f3820;
-  object-fit: cover;
-  margin: 1.5%;
-}
-
-.container-title-servicios {
-  font-family: "Poppins-Bold";
 }
 
 /* Sección 'Productos' */
