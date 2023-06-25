@@ -21,9 +21,6 @@
 			}
 		}
 	}
-	.caja-producto {
-		width: 95%;
-	}
 	.container-nosotros {
 		grid-template-columns: auto;
 		.container-nosotros-texto{
@@ -78,14 +75,17 @@
 		width: 90%;
 		@include display_grid(1);
 		.box-img {
-			img {
-				height: 210px;
-			}
+			// img {
+			// 	height: 210px;
+			// }
 			figure{
 				box-shadow: none;
 
 			};
 		}
+	}
+	.caja-producto{
+		width: 95%;
 	}
 }
 

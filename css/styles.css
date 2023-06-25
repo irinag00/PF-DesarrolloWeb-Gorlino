@@ -170,12 +170,10 @@ body {
   text-align: center;
   background-color: white;
   box-shadow: 5px 10px 18px #5f3820;
-  padding: 2%;
+  padding: 10px;
   border-radius: 2%;
   margin: 20px;
   display: inline-block;
-  text-align: center;
-  width: 500px;
   transition: 0.5s;
 }
 .caja-producto img {
@@ -425,9 +423,6 @@ footer .imagen-logo {
   .grid-container-fotos .item2:nth-child(2) {
     grid-column-start: span 1;
   }
-  .caja-producto {
-    width: 95%;
-  }
   .container-nosotros {
     grid-template-columns: auto;
   }
@@ -482,11 +477,11 @@ footer .imagen-logo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .container-galeria .box-img img {
-    height: 210px;
-  }
   .container-galeria .box-img figure {
     box-shadow: none;
+  }
+  .caja-producto {
+    width: 95%;
   }
 }
 

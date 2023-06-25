@@ -5,12 +5,10 @@
 	text-align: center;
 	background-color: white;
 	@include sombras_img (18px);
-	padding: 2%;
+	padding: 10px;
 	border-radius: 2%;
 	margin: 20px;
 	display: inline-block;
-	text-align: center;
-	width: 500px;
 	transition: 0.5s;
 	img {
 		width: 100%;
