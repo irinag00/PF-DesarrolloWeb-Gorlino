@@ -1,6 +1,18 @@
 
-@import "utilities/variables", "utilities/extend", "utilities/mixin";
-@import "components/fonts", "components/reset", "components/body", "components/navbar", "components/carousel","components/servicios", "components/redes-socialiales";
-@import "layouts/img-products", "layouts/products", "layouts/footer";
-@import "pages/contacto", "pages/galeria", "pages/nosotros";
+@import "utilities/variables";
+@import "utilities/extend";
+@import "utilities/mixin";
+@import "components/fonts";
+@import "components/reset";
+@import "components/body";
+@import "components/navbar";
+@import "components/carousel";
+@import "components/servicios";
+@import "components/redes-socialiales";
+@import "layouts/img-products";
+@import "layouts/products";
+@import "layouts/footer";
+@import "pages/contacto";
+@import "pages/galeria";
+@import "pages/nosotros";
 @import "media-queries/mediaqueries";
