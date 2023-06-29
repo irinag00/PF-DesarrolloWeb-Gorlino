@@ -1,28 +1,48 @@
 @import '../utilities/variables', '../utilities/mixin';
 
 /* Sección 'Nosotros' */
-.container-nosotros {
-	@include display_grid(2);
-	background-color: $background-color_nosotros;
-	@include sombras_img (18px);
-	img {
-        @include tamanio_completo;
-		border-radius: 3px;
-	}
-}
-.container-nosotros-texto {
-	margin-top: 10%;
-	h3 {
-		font-size: 180%;
-		@include sombras_text($shadow-color_text-img);
-	}
-	p {
-		font-size: 100%;
-		margin-bottom: 2%;
-	}
-	span {
-		font-family: $font-family_negrita;
-		color: $color_tipografia_letras_grandes;
+.contenedor-fondo{
+	width: 100%;
+	height: 30vh;
+	background-image: url("/img/varios-pasteles-estantes-supermercados-venta.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	h2{
+		color: white;
+		 /* Color del texto */
+		font-size: 24px; /* Tamaño de fuente */
+		text-align: center; /* Alineación del texto */
+		padding: 20px; /* Espaciado interno del texto */
+		@include sombras_text(black);
 		font-size: 160%;
+		font-family: $font-family_negrita;
 	}
 }
+// .container-nosotros {
+// 	@include display_grid(2);
+// 	background-color: $background-color_nosotros;
+// 	@include sombras_img (18px);
+// 	img {
+//         @include tamanio_completo;
+// 		border-radius: 3px;
+// 	}
+// }
+// .container-nosotros-texto {
+// 	margin-top: 10%;
+// 	h3 {
+// 		font-size: 180%;
+// 		@include sombras_text($shadow-color_text-img);
+// 	}
+// 	p {
+// 		font-size: 100%;
+// 		margin-bottom: 2%;
+// 	}
+// 	span {
+// 		font-family: $font-family_negrita;
+// 		color: $color_tipografia_letras_grandes;
+// 		font-size: 160%;
+// 	}
+// }
