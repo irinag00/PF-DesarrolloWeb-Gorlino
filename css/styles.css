@@ -78,10 +78,13 @@ body {
 
 /* Sección de 'Nuestros Servicios' */
 .section-servicios {
-  background-color: #f1c695;
+  background-color: #f3d4b1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding-top: 15px;
 }
 
 .container-servicios {
+  transition: all ease 0.2s;
   padding-top: 2%;
 }
 .container-servicios p {
@@ -97,6 +100,11 @@ body {
   border: solid 3px #5f3820;
   object-fit: cover;
   margin-bottom: 1%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.container-servicios img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .container-title-servicios {
@@ -376,17 +384,21 @@ footer .imagen-logo {
 .container-nosotros {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .container-nosotros .container-nosotros-item {
+  object-fit: cover;
   text-align: center;
+  height: 42.7vh;
 }
 .container-nosotros .container-nosotros-item .img-nosotros {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  height: 42.7vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 .container-nosotros .container-nosotros-item .img-dibujo {
@@ -403,25 +415,6 @@ footer .imagen-logo {
   font-family: "Poppins-Bold";
   color: #99552b;
   font-size: 160%;
-}
-
-.contenedor-fondo {
-  width: 100%;
-  height: 60vh;
-  background-image: url("../img/varios-pasteles-estantes-supermercados-venta2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contenedor-fondo h2 {
-  padding: 20px;
-  color: #f1c695;
-  text-align: center;
-  font-family: "Poppins-Bold";
-  text-shadow: 2px 2px 2px black;
-  padding: 5px;
 }
 
 /*---Media Queries --*/
@@ -448,18 +441,14 @@ footer .imagen-logo {
   .container-nosotros {
     grid-template-columns: auto;
   }
-  .container-nosotros .container-nosotros-texto {
-    margin-top: 5%;
+  .container-nosotros .container-nosotros-item:nth-child(3) {
+    order: 4;
   }
-  .container-nosotros .container-nosotros-texto h3 {
+  .container-nosotros .container-nosotros-item p {
     font-size: 100%;
   }
-  .container-nosotros .container-nosotros-texto p {
-    font-size: 80%;
-    margin-bottom: 2%;
-  }
-  .container-nosotros .container-nosotros-texto span {
-    font-size: 120%;
+  .container-nosotros .container-nosotros-item span {
+    font-size: 130%;
   }
   .container-galeria {
     width: 95%;
@@ -497,9 +486,6 @@ footer .imagen-logo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .container-nosotros .container-nosotros-item {
-    padding-bottom: 20px;
-  }
   .container-nosotros .container-nosotros-item:nth-child(3) {
     order: 4;
   }
@@ -508,6 +494,9 @@ footer .imagen-logo {
   }
   .container-nosotros .container-nosotros-item span {
     font-size: 130%;
+  }
+  .container-nosotros .container-nosotros-item .img-dibujo {
+    width: 100px;
   }
   .container-galeria {
     width: 90%;
@@ -519,6 +508,9 @@ footer .imagen-logo {
   }
   .caja-producto {
     width: 95%;
+  }
+  .contenedor-fondo {
+    height: auto;
   }
 }
 

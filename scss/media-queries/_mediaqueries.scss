@@ -23,19 +23,18 @@
 	}
 	.container-nosotros {
 		grid-template-columns: auto;
-		.container-nosotros-texto{
-			margin-top: 5%;
-			h3 {
-			font-size: 100%;
+		.container-nosotros-item{
+			&:nth-child(3){
+				order: 4;
 			}
-			p {
-			font-size: 80%;
-			margin-bottom: 2%;
+			p{
+				font-size: 100%;
 			}
-			span {
-			font-size: 120%;
+			span{
+				font-size: 130%;
 			}
 		}
+		
 	}
 	.container-galeria {
 		width: 95%;
@@ -74,6 +73,7 @@
 		}
 	}
 	.container-nosotros {
+
 		@include display_grid(1);
 		.container-nosotros-item{
 			&:nth-child(3){
@@ -85,7 +85,9 @@
 			span{
 				font-size: 130%;
 			}
-			padding-bottom: 20px;
+			.img-dibujo{
+				width: 100px;
+			}
 		}
 	}
 	.container-galeria {
@@ -104,6 +106,8 @@
 	.caja-producto{
 		width: 95%;
 	}
-
+	.contenedor-fondo{
+		height: auto;
+	}
 }
 
