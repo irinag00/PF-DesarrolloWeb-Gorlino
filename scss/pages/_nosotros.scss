@@ -1,27 +1,63 @@
 @import '../utilities/variables', '../utilities/mixin';
 
 /* Sección 'Nosotros' */
+.container-nosotros{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	// grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	// background-color: $background-color_nosotros;
+	.container-nosotros-item{
+		// padding: 20px;
+		text-align: center;
+		.img-nosotros{
+			@include tamanio_completo;
+			object-fit: cover;
+			height: 42.7vh;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.7)
+		}
+		.img-dibujo{
+			width: 150px;
+		}
+		p{
+			text-align: center;
+			padding-left:50px;
+			padding-right:50px;
+			padding-top: 10px;
+			font-size: 110%;
+		}
+		span {
+			font-family: $font-family_negrita;
+			color: $color_tipografia_letras_grandes;
+			font-size: 160%;
+		}
+	}
+}
+  
 .contenedor-fondo{
-	margin-top: 20px;
+	// margin-top: 20px;
 	width: 100%;
-	height: 30vh;
-	background-image: url("/img/varios-pasteles-estantes-supermercados-venta.jpg");
+	height: 40vh;
+	background-image: url("/img/varios-pasteles-estantes-supermercados-venta2.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	h2{
-		color: white;
-		 /* Color del texto */
-		font-size: 24px; /* Tamaño de fuente */
-		text-align: center; /* Alineación del texto */
-		padding: 20px; /* Espaciado interno del texto */
-		@include sombras_text(black);
-		font-size: 160%;
+
+	.text-overlay{
+		// background-color: rgba(0, 0, 0, 0.7);
+		padding: 20px;
+		color: $background-color_claro;
+		text-align: center;
+		font-size: 130%;
 		font-family: $font-family_negrita;
+		text-shadow: 2px 2px 2px (black);
+		padding: 5px;
 	}
 }
+
 // .container-nosotros {
 // 	@include display_grid(2);
 // 	background-color: $background-color_nosotros;

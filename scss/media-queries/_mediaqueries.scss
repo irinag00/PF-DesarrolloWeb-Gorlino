@@ -53,11 +53,9 @@
 		}
 	}
 	.contenedor-fondo{
-		width: 95%;
 		h2{
 			font-size: 130%;
 		}
-
 	}
 }
 @media screen and (max-width: 576px) {
@@ -77,6 +75,18 @@
 	}
 	.container-nosotros {
 		@include display_grid(1);
+		.container-nosotros-item{
+			&:nth-child(3){
+				order: 4;
+			}
+			p{
+				font-size: 100%;
+			}
+			span{
+				font-size: 130%;
+			}
+			padding-bottom: 20px;
+		}
 	}
 	.container-galeria {
 		width: 90%;
@@ -94,5 +104,6 @@
 	.caja-producto{
 		width: 95%;
 	}
+
 }
 
