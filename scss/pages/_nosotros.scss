@@ -4,28 +4,26 @@
 .container-nosotros{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
 	justify-content: center;
 	align-items: center;
 	@include tamanio_completo;
 	.container-nosotros-item{
-		object-fit: cover;
 		text-align: center;
 		height: 42.7vh;
 		.img-nosotros{
 			@include tamanio_completo;
 			object-fit: cover;
-			// height: 42.7vh;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.7)
 		}
 		.img-dibujo{
 			width: 150px;
+			padding-top: 5px;
 		}
 		p{
 			text-align: center;
 			padding-left:50px;
 			padding-right:50px;
-			padding-top: 10px;
+			padding-top: 15px;
 			font-size: 110%;
 		}
 		span {

@@ -1,6 +1,46 @@
 @import '../utilities/variables', '../utilities/mixin';
 
 /*---Media Queries --*/
+@media screen and (max-width: 1215px){
+	.container-nosotros {
+		.container-nosotros-item{
+			.img-dibujo{
+				padding-bottom: 0%;
+				width: 130px;
+			}
+			p{
+				font-size: 110%;
+				padding-left:30px;
+				padding-right:30px;
+				padding-top: 5px;
+			}
+			span{
+				font-size: 140%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 840px){
+	.container-nosotros {
+		grid-template-columns: auto;
+		.container-nosotros-item{
+			@include tamanio_completo;
+			&:nth-child(3){
+				order: 4;
+			}
+			p{
+				font-size: 110%;
+			}
+			span{
+				font-size: 140%;
+			}
+			.img-nosotros{
+				height: 30vh;
+			}
+		}
+		
+	}
+}
 @media screen and (max-width: 768px) {
 	.grid-container-fotos {
 		width: 95%;
@@ -94,9 +134,6 @@
 		width: 90%;
 		@include display_grid(1);
 		.box-img {
-			// img {
-			// 	height: 210px;
-			// }
 			figure{
 				box-shadow: none;
 
