@@ -548,6 +548,9 @@ footer .imagen-logo {
   .contenedor-fondo {
     height: auto;
   }
+  .section-title-index span {
+    font-size: 140%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
