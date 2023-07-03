@@ -227,6 +227,11 @@ body {
   font-family: "Poppins-Bold";
 }
 
+.container-productos-cajas {
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+}
+
 footer {
   text-align: center;
   background-color: rgba(95, 56, 32, 0.7450980392);
